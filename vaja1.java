@@ -1,5 +1,19 @@
 public class vaja1{
     public static void main(String [] args){
-        System.out.println("Rad nimam javo");
+        System.out.println("2 na 10= "+potenca(10));
+        System.out.println("sedmo fib število je "+fib(7));
+    
+    }
+    public static int potenca(int n){
+        //izracuna 2^n rekurzivno
+        if(n==0)
+            return 1;
+        return 2*potenca(n-1);
+    }
+    public static int fib(int n){
+        //izracuna n-to fibonaccijevo st
+        if(n==1||n==2)
+            return 1;
+        return fib(n-1)+fib(n-2);
     }
 }
